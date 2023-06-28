@@ -1,10 +1,23 @@
 <script>
+  const listItems = [
+    "Tutorials by industry experts",
+    "Peer & expert code review",
+    "Coding exercises",
+    "Access to our GitHub repos",
+    "Community forum",
+    "Flashcard decks",
+    "New videos every week"
+  ];
 </script>
 
 <section class="container">
   <div class="overlay"></div>
   <h2 class="title">Why Us</h2>
-  <p class="subtitle">Tutorials by industry experts<br>Peer & expert code review<br>Coding exercises<br>Access to our GitHub repos<br>Community forum<br>Flashcard decks<br>New videos every week</p>
+  <ul class="list">
+    {#each listItems as item}
+      <li class="list-item">{item}</li>
+    {/each}
+  </ul>
 </section>
 
 <style>
@@ -30,9 +43,14 @@
     line-height: 1.3125rem;
     letter-spacing: -0.01406rem;
   }
-  .subtitle {
+  .list {
     position: relative;
     z-index: 20;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .list-item {
     font-size: 0.875rem;
     line-height: 1.25rem;
     letter-spacing: -0.01094rem;
