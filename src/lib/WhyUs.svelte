@@ -11,22 +11,21 @@
   .container {
     position: relative;
     padding: 1.5rem;
-    background: #2AB3B1;
+    background: var(--color-cyan);
+    color: var(--color-white);
   }
   .overlay {
     position: absolute;
     inset: 0;
     z-index: 10;
     opacity: 0.15185546875;
-    background: var(--white, #FFF);
+    background: var(--color-white);
   }
   .title {
     position: relative;
     z-index: 20;
     margin-bottom: 1.13rem;
-    color: var(--white, #FFF);
     font-size: 1.125rem;
-    font-family: Karla;
     font-weight: 700;
     line-height: 1.3125rem;
     letter-spacing: -0.01406rem;
@@ -34,9 +33,7 @@
   .subtitle {
     position: relative;
     z-index: 20;
-    color: var(--white, #FFF);
     font-size: 0.875rem;
-    font-family: Karla;
     line-height: 1.25rem;
     letter-spacing: -0.01094rem;
     opacity: 0.75;

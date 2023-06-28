@@ -17,6 +17,6 @@
     justify-content: center;
     align-items: center;
     padding: 4.5rem 2rem 3.875rem 2rem;
-    background: #E6EFF5;
+    background: var(--color-light-blue);
   }
 </style>

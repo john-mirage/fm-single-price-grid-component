@@ -1,4 +1,4 @@
-<script>
+<script> 
   import Cta from "./Cta.svelte";
   import WhyUs from "./WhyUs.svelte";
 
@@ -20,7 +20,7 @@
   .container {
     width: 100%;
     max-width: 19.4375rem;
-    background: #FFF;
+    background: var(--color-white);
     box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
     border-radius: 5px;
     overflow: hidden;
@@ -30,7 +30,7 @@
   }
   .title {
     margin-bottom: 1.5rem;
-    color: #2AB3B1;
+    color: var(--color-cyan);
     font-size: 1.25rem;
     font-weight: 700;
     letter-spacing: -0.01563rem;
@@ -38,14 +38,14 @@
   }
   .subtitle {
     margin-bottom: 1rem;
-    color: #C0DF33;
+    color: var(--color-bright-yellow);
     font-size: 0.9375rem;
     font-weight: 700;
     line-height: 1.25rem;
     letter-spacing: -0.01169rem;
   }
   .description {
-    color: #9AA7BE;
+    color: var(--color-grayish-blue);
     font-size: 0.875rem;
     line-height: 1.625rem;
     letter-spacing: -0.01094rem;
@@ -53,6 +53,9 @@
   @media screen and (min-width: 768px) {
     .container {
       max-width: 39.6875rem;
+    }
+    .header {
+      padding: 2.5rem;
     }
     .body {
       display: grid;

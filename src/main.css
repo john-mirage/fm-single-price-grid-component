@@ -47,3 +47,12 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+:root {
+  --color-light-blue: #e6eff5;
+  --color-white: #fff;
+  --color-cyan: #2ab2af;
+  --color-bright-yellow: #c0df34;
+  --color-light-gray: #e5eff5;
+  --color-grayish-blue: #98a6bd;
+}

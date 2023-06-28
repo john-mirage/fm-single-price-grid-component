@@ -1,8 +1,7 @@
 <script>
-  export let className = "";
 </script>
 
-<div class={`container ${className}`}>
+<div class="container">
   <h2 class="title">Monthly Subscription</h2>
   <div class="row">
     <p class="price">$29</p>
@@ -15,13 +14,12 @@
 <style>
   .container {
     padding: 1.5rem;
-    background: #2AB3B1;
+    background: var(--color-cyan);
+    color: var(--color-white);
   }
   .title {
     margin-bottom: 1.13rem;
-    color: var(--white, #FFF);
     font-size: 1.125rem;
-    font-family: Karla;
     font-weight: 700;
     line-height: 1.3125rem;
     letter-spacing: -0.01406rem;
@@ -34,26 +32,20 @@
     gap: 0.69rem;
   }
   .price {
-    color: var(--white, #FFF);
     font-size: 2rem;
-    font-family: Karla;
     font-weight: 700;
     line-height: 2.3125rem;
     letter-spacing: -0.025rem;
   }
   .period {
-    color: var(--white, #FFF);
     font-size: 1rem;
-    font-family: Karla;
     line-height: 1.625rem;
     letter-spacing: -0.0125rem;
     opacity: 0.5;
   }
   .incentive {
     margin-bottom: 1.63rem;
-    color: var(--white, #FFF);
     font-size: 1rem;
-    font-family: Karla;
     line-height: 1.625rem;
     letter-spacing: -0.0125rem;
   }
@@ -61,25 +53,36 @@
     width: 100%;
     height: 3rem;
     border-radius: 5px;
-    background: var(--bright-yellow, #C0DF34);
+    background: var(--color-bright-yellow);
     box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10);
-    color: var(--white, #FFF);
+    color: var(--color-white);
     font-size: 1rem;
-    font-family: Karla;
     font-weight: 700;
     letter-spacing: -0.0125rem;
     line-height: 1.1875 rem;
     border: none;
     cursor: pointer;
   }
+
+  @media screen and (prefers-reduced-motion: no-preference) {
+    .button {
+      transition-property: box-shadow;
+      transition-duration: 150ms;
+    }
+  }
+
+  @media screen and (hover: hover) {
+    .button:hover {
+      box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.2);
+    }
+  }
+
   @media screen and (min-width: 768px) {
     .container {
       padding: 2.5rem;
     }
     .title {
-      color: var(--white, #FFF);
       font-size: 1.125rem;
-      font-family: Karla;
       font-weight: 700;
       letter-spacing: -0.01406rem;
     }
