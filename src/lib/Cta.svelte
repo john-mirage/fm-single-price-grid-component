@@ -1,7 +1,7 @@
 <script>
 </script>
 
-<div class="container">
+<section class="container">
   <h2 class="title">Monthly Subscription</h2>
   <div class="row">
     <p class="price">$29</p>
@@ -9,7 +9,7 @@
   </div>
   <p class="incentive">Full access for less than $1 a day</p>
   <button class="button">Sign Up</button>
-</div>
+</section>
 
 <style>
   .container {

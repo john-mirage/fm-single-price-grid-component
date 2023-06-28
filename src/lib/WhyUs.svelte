@@ -1,11 +1,11 @@
 <script>
 </script>
 
-<div class="container">
+<section class="container">
   <div class="overlay"></div>
   <h2 class="title">Why Us</h2>
   <p class="subtitle">Tutorials by industry experts<br>Peer & expert code review<br>Coding exercises<br>Access to our GitHub repos<br>Community forum<br>Flashcard decks<br>New videos every week</p>
-</div>
+</section>
 
 <style>
   .container {
